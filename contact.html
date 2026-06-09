@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Janique Care Support</title>
+
     <meta
       name="description"
       content="Contact Janique Care Support for compassionate non-medical caregiver support, wellness check-ins, and family updates in Louisiana."
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/main.js" defer></script>
   </head>
+
   <body>
+    <!-- Navbar -->
     <header class="navbar">
       <div class="container navbar-inner">
         <a href="index.html" class="brand">
           <div class="brand-badge">J</div>
+
           <div>
             <div class="brand-title">Janique Care Support</div>
             <div class="brand-subtitle">Compassionate non-medical support</div>
@@ -53,15 +60,18 @@
       </div>
     </header>
 
+    <!-- Hero -->
     <section class="page-hero">
       <div class="container grid-2 items-center">
         <div>
           <h1>Contact Us</h1>
+
           <p>
             Send a message to request non-medical caregiver support, wellness
             check-ins, or family communication for a loved one.
           </p>
         </div>
+
         <div class="panel shadow">
           <img
             src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1200&q=80"
@@ -72,40 +82,74 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="section">
       <div class="container grid-2">
+        <!-- Form -->
         <div class="form-wrap">
           <h2 class="text-2xl font-bold">Request Support</h2>
+
           <p class="mt-2 text-muted">
             Please share a few details so we can understand your family’s needs.
           </p>
 
-          <form class="mt-6" action="#" method="post">
+          <!-- FORM SUBMIT -->
+          <form
+            class="mt-6"
+            action="https://formsubmit.co/nikie@janiquecaresupport.com"
+            method="POST"
+          >
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false" />
+
+            <!-- Email Subject -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Contact Request - Janique Care Support"
+            />
+
+            <!-- Redirect After Submit -->
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.com/thank-you.html"
+            />
+
+            <!-- Template -->
+            <input type="hidden" name="_template" value="table" />
+
             <div class="form-grid">
               <div class="form-group">
                 <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required />
+
+                <input type="text" id="name" name="Full Name" required />
               </div>
 
               <div class="form-group">
                 <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" name="phone" required />
+
+                <input type="tel" id="phone" name="Phone Number" required />
               </div>
 
               <div class="form-group">
                 <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required />
+
+                <input type="email" id="email" name="Email" required />
               </div>
 
               <div class="form-group">
                 <label for="city">City / Parish *</label>
-                <input type="text" id="city" name="city" required />
+
+                <input type="text" id="city" name="City / Parish" required />
               </div>
 
               <div class="form-group full">
                 <label for="service">Type of Support Needed *</label>
-                <select id="service" name="service" required>
+
+                <select id="service" name="Support Needed" required>
                   <option value="">Select a service</option>
+
                   <option>Wellness Check-Ins</option>
                   <option>Family Updates</option>
                   <option>Companionship Support</option>
@@ -116,16 +160,18 @@
               </div>
 
               <div class="form-group full">
-                <label for="message">Tell us about your situation *</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="message"> Tell us about your situation * </label>
+
+                <textarea id="message" name="Message" required></textarea>
               </div>
 
               <div class="form-group full">
                 <label for="time">Preferred Contact Time</label>
+
                 <input
                   type="text"
                   id="time"
-                  name="time"
+                  name="Preferred Contact Time"
                   placeholder="Morning, afternoon, evening"
                 />
               </div>
@@ -134,6 +180,7 @@
             <div class="mt-6">
               <label class="flex items-center gap-3 text-sm">
                 <input type="checkbox" required style="width: auto" />
+
                 I understand this form is not for emergencies and I agree to be
                 contacted.
               </label>
@@ -145,30 +192,40 @@
           </form>
         </div>
 
+        <!-- Contact Info -->
         <div class="stack">
           <div class="panel">
             <h2 class="text-2xl font-bold">Direct Contact</h2>
+
             <p class="mt-4 text-muted">
               For faster communication, use the details below.
             </p>
+
             <div class="mt-6 stack">
               <p>
                 <strong>Phone:</strong>
+
                 <a href="tel:+15044396202">(504) 439-6202</a>
               </p>
+
               <p>
                 <strong>Email:</strong>
-                <a href="mailto:Nikie2386@gmail.com">Nikie2386@gmail.com</a>
+
+                <a href="mailto:nikie@janiquecaresupport.com">
+                  nikie@janiquecaresupport.com
+                </a>
               </p>
+
               <p>
-                <strong>Address:</strong> 3108 Blanchard Drive, Chalmette, LA
-                70043
+                <strong>Address:</strong>
+                3108 Blanchard Drive, Chalmette, LA 70043
               </p>
             </div>
           </div>
 
           <div class="panel">
             <h2 class="text-2xl font-bold">Important Note</h2>
+
             <p class="mt-4 text-muted">
               This is a non-medical support service. For urgent medical or
               safety emergencies, call 911 immediately.
@@ -177,6 +234,7 @@
 
           <div class="panel">
             <h2 class="text-2xl font-bold">Best for</h2>
+
             <p class="mt-4 text-muted">
               Adult children, family caregivers, seniors, hospice families, and
               anyone who wants gentle support and regular check-ins.
@@ -186,24 +244,29 @@
       </div>
     </section>
 
+    <!-- CTA -->
     <section class="section bg-soft">
       <div class="container">
         <div class="cta">
           <h2 class="section-title text-white">Ready to get started?</h2>
+
           <p>Send your request and we’ll follow up as soon as possible.</p>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container footer-grid">
         <div>
           <h3 class="font-bold text-white">Janique Care Support</h3>
+
           <p class="small mt-2">
             Non-medical caregiver support, wellness check-ins, and family
             communication.
           </p>
         </div>
+
         <div class="footer-links">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
@@ -211,6 +274,7 @@
           <a href="contact.html">Contact</a>
         </div>
       </div>
+
       <div class="container mt-6">
         <p class="small">For emergencies, call 911 immediately.</p>
       </div>
